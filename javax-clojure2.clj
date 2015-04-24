@@ -1,6 +1,9 @@
 ;; 24 April 2015
 ;; mod to read real System property
 ;; (str "Hello" User)
+
+
+;; this can be executed from the command line    clojure javax-clojure2.clj  
 (def prop8 "os.arch") 	;;Operating system architecture
 (def prop9 "os.name") 	;;Operating system name
 
