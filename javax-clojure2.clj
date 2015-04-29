@@ -31,10 +31,6 @@
 ;; http://docs.oracle.com/javase/7/docs/api/javax/swing/JOptionPane.html
 
 
-
-
-
-
 ;; this can be executed from the command line    clojure javax-clojure2.clj  
 (def prop8 "os.arch") 	;;Operating system architecture
 (def prop9 "os.name") 	;;Operating system name
