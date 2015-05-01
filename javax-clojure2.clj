@@ -26,7 +26,7 @@
 (def p6 (System/getProperty prop6))
 (def pos (System/getProperty ppos))
 
-// some help from http://stackoverflow.com/questions/4635680/what-is-the-best-way-to-get-date-and-time-in-clojure
+;; some help from http://stackoverflow.com/questions/4635680/what-is-the-best-way-to-get-date-and-time-in-clojure
 (javax.swing.JOptionPane/showMessageDialog nil 
 	(str "Hello " userN "\n" "Your Home Dir is " userH "\nRunning " p8 " " p9 "\nJava " p6 "\nOS " pos "\n" (now)) )  
 		; prints hello and the user name 
