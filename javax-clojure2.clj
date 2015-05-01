@@ -32,10 +32,7 @@
 		; prints hello and the user name 
 
 ;; http://docs.oracle.com/javase/7/docs/api/javax/swing/JOptionPane.html
-
-
-
-
+;; http://stackoverflow.com/questions/4635680/what-is-the-best-way-to-get-date-and-time-in-clojure
 
 
 ;; this can be executed from the command line    clojure javax-clojure2.clj  
