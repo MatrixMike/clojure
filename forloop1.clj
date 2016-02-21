@@ -35,5 +35,7 @@
 (def rgear (seq [26 23 21 19 17 15 13 12]))
 
 (for [f fgear r rgear ] (/ f r))  ;; creates unsorted output
+
+(sort (for [f fgear r rgear ] (/ f r))  ) ;;  now a sorted list 22/2/2016
 ;
    
