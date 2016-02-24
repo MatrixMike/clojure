@@ -2,6 +2,11 @@
 ;   needs the intersection definitions file - ATM I copy the Rich Hickey text into REPL but need to use proper command 
 ; to treat the .clj file like an 'include' file
 
+;; 
+(ns tutorial.core
+(:require   [clojure.string :as cstr]
+            [clojure.set :as cset]))
+
 (def word1 "storage")
 (def word2 "capacitor")
 (def word3 "electrolytic")
