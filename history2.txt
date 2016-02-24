@@ -1,0 +1,246 @@
+    1  df -h
+    2  ifconfig 
+    3  sudo apt-get install meld tidy
+    4  history 
+    5  history >> ~/thisPC/history1.txt
+    6  pwd
+    7  ls -lc
+    8  ls -lca
+    9  mkdir thisPC
+   10  cd thisPC/
+   11  dmesg > dmesg1.txt
+   12  more < dmesg1.txt 
+   13  uptime 
+   14  geany
+   15  apt-get install geany
+   16  sudo apt-get install geany
+   17  history 
+   18  history >> history1.txt 
+   19  ls -lc
+   20  cat history1.txt 
+   21  grep apt-get   history1.txt 
+   22  geany &
+   23  sudo apt-get install git
+   24  ifconfig 
+   25  dmesg 
+   26  ifconfig 
+   27  network-admin 
+   28  ifconfig 
+   29  tcpdump 
+   30  tcpdump -D
+   31  tcpdump -w
+   32  tcpdump -i wlan1
+   33  sudo tcpdump -i wlan1
+   34  ifconfig 
+   35  ifupdown
+   36  ifup lo 
+   37  ifconfig 
+   38  pwd
+   39  mkdir KU
+   40  cd KU/
+   41  gedit &
+   42  ifconfig 
+   43  gnome-blu
+   44  blueman-manager 
+   45  bluez-test-manager 
+   46  cinnamon-control-center 
+   47  ifconfig 
+   48  dmesg 
+   49  nss-myhostname
+   50  dmesg > dmesg3.txt
+   51  nss-myhostname
+   52  myhostname
+   53  nss-myhostname
+   54  apt-get install nss-myhostname
+   55  sudo apt-get install nss-myhostname
+   56  apt-get install nss-myhostname
+   57  sudo apt-get install nss-myhostname
+   58  sudo apt-get install libnss-myhostname
+   59  dmesg 
+   60  dmesg
+   61  ifconfig 
+   62  watch -n 10 ifconfig 
+   63  ifconfig 
+   64  df -h
+   65  cd /boot/
+   66  ls -lca
+   67  uname -a
+   68  git
+   69  ifconfig 
+   70  uname -a
+   71  df -h
+   72  ls -lca
+   73  ifconfig 
+   74  uname -a
+   75  inxi
+   76  inxi -f
+   77  inxi -F
+   78  ifconfig 
+   79  vlc
+   80  uname -a
+   81  inxi 
+   82  inxi -F
+   83  cd ~/brother/
+   84  ls -lc
+   85  cd ~/Downloads/
+   86  ls -lc
+   87  mv linux-brprinter-installer-2.0.0-1.gz ~/brother/
+   88  cd ~/brother/
+   89  ls -lc
+   90  gunzip linux-brprinter-installer-2.0.0-1.gz 
+   91  bash linux-brprinter-installer-2.0.0-1 HL-1110
+   92  sudo bash linux-brprinter-installer-2.0.0-1 HL-1110
+   93  history 
+   94  cd ~/thisPC/
+   95  ls -lc
+   96  history > history2.txt 
+   97  cd /usr/share/cups/data/
+   98  ls -lca
+   99  gedit testprint 
+  100  lpstat 
+  101  uname -a
+  102  inxi -f
+  103  inxi -F
+  104  brasero 
+  105  ifconfig 
+  106  brasero
+  107  sudo apt-get install brasero
+  108  ifconfig 
+  109  cd ~/
+  110  arduino
+  111  sudo apt-get install arduino
+  112  sudo apt-get install brasero
+  113  sudo apt-get install arduino
+  114  ls -lc
+  115  cd Downloads/
+  116  ls -lc
+  117  arduino
+  118  sudo arduino
+  119  ls -lc
+  120  ifconfig 
+  121  brasero 
+  122  ifconfig 
+  123  watch -n 10 ifconfig 
+  124  ls -lc
+  125  cd ~/Downloads/
+  126  ls -lc
+  127  cd ~/
+  128  ls -lc
+  129  cd ~/Downloads/
+  130  ls -lc
+  131  ifconfig 
+  132  cd ~/arduino167/
+  133  ls -lc
+  134  cd arduino-1.6.7/
+  135  ls -lc
+  136  ./install.sh 
+  137  sudo ./install.sh 
+  138  ls -lc
+  139  ./arduino
+  140  ifconfig 
+  141  ls -lc
+  142  ./install.sh 
+  143  dmesg 
+  144  cd ~/thisPC/
+  145  ls -lc
+  146  dmesg > dmesg4.txt
+  147  more < dmesg4.txt 
+  148  dmesg 
+  149  sudo arduino
+  150  cd ~/arduino167/
+  151  ls -lc
+  152  cd arduino-1.6.7/
+  153  ls -lc
+  154  arduino
+  155  ./arduino
+  156  sudo ./arduino
+  157  gtkterm
+  158  sudo apt-get install gtkterm
+  159  sudo apt-get install gtkterm    --fix-missing
+  160  ifconfig 
+  161  sudo apt-get install gtkterm
+  162  gtkterm
+  163  dmesg 
+  164  ifconfig 
+  165  ping electroteach.com
+  166  ping www.electroteach.com
+  167  gitk
+  168  ifconfig 
+  169  watch -n 10 ifconfig 
+  170  ping ubuntu.com
+  171  dmesg 
+  172  df -h
+  173  ifconfig 
+  174  df -h
+  175  ping gmail.com
+  176  ifconfig 
+  177  ping icloud.com
+  178  ping gmail.com
+  179  ifconfig 
+  180  cd ~/
+  181  ls
+  182  clojure18/clojure-1.8.0/
+  183  cd clojure18/clojure-1.8.0/
+  184  ls -lc
+  185  history | grep cloj
+  186  cat readme.txt 
+  187  java -cp clojure-${VERSION}.jar clojure.main
+  188  java -cp clojure-1.8.0.jar clojure.main
+  189  cd ~?
+  190  cd ~/
+  191  ls
+  192  mkdir wifi
+  193  cd wifi/
+  194  ifconfig 
+  195  cd ~/
+  196  ls -lc
+  197  git clone https://github.com/MatrixMike/clojure.git
+  198  ifconfig 
+  199  geany
+  200  gitk
+  201  sudo apt-get install gitk
+  202  gitk
+  203  cd ..
+  204  gitk
+  205  cd ~/
+  206  ls -lc
+  207  ls clojure
+  208  cd clojure
+  209  gitk
+  210  git pull
+  211  gitk
+  212  cd ~/clojure
+  213  ls -lc
+  214  java -cp clojure-1.8.0.jar clojure.main
+  215  ls -lc
+  216  cd ~/clojure18/
+  217  java -cp clojure-1.8.0.jar clojure.main
+  218  ls -lc
+  219  cd clojure-1.8.0/
+  220  java -cp clojure-1.8.0.jar clojure.main
+  221  java -cp clojure-1.8.0.jar clojure.main ~/clojure/mathTest.clj 
+  222  java -cp clojure-1.8.0.jar clojure.main 
+  223  ifconfig 
+  224  ping electroteach.com
+  225  ping www.electroteach.com
+  226  dmesg 
+  227  ls -lc
+  228  ping electroteach.com
+  229  java -cp clojure-1.8.0.jar clojure.main 
+  230  ifconfig 
+  231  watch -n 10 ifconfig 
+  232  gitk
+  233  ls -lc
+  234  ls -lct
+  235  gitk
+  236  git status
+  237  git add .
+  238  git status
+  239  gitk
+  240  history | grep git
+  241  git push
+  242  git status
+  243  gitk
+  244  git status
+  245  history 
+  246  history > history2.txt
