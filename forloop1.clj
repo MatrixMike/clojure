@@ -36,4 +36,4 @@
 
 (for [f fgear r rgear ] (/ f r))  ;; creates unsorted output
 ;
-   
+(sort (for [f fgear r rgear ] (/ f r)))  ;; creates sorted output  
