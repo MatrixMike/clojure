@@ -38,4 +38,4 @@
 
 (sort (for [f fgear r rgear ] (/ f r))  ) ;;  now a sorted list 22/2/2016
 ;
-   
+(sort (for [f fgear r rgear ] (/ f r)))  ;; creates sorted output  
