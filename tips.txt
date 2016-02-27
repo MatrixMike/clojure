@@ -1,0 +1,8 @@
+upgrade to java8
+upgrade to clojure 1.7
+
+get higher spec WiFi dongle
+get onto euro clojure 
+get onto clojure dev release notes
+
+

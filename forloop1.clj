@@ -7,7 +7,7 @@
 (def fgear (seq [22.0 32.0 42.0]))
 (def rgear (seq [26 23 21 19 17 15 13 12]))
 
-(for [fgear digits1 rgear digits2] (/ fgear rgear))
+;; (for [fgear digits1 rgear digits2] (/ fgear rgear))    ;; missing digits2 definition
 ;
 ; now to sort the created list
 
@@ -27,7 +27,7 @@
 (def fgear (seq [22.0 32.0 42.0]))
 (def rgear (seq [26 23 21 19 17 15 13 12]))
 
-(for [fgear digits1 rgear digits2] (/ fgear rgear))
+;;(for [fgear digits1 rgear digits2] (/ fgear rgear))
 ;
 
  ;15.04.2015
@@ -38,4 +38,5 @@
 
 (sort (for [f fgear r rgear ] (/ f r))  ) ;;  now a sorted list 22/2/2016
 ;
-(sort (for [f fgear r rgear ] (/ f r)))  ;; creates sorted output  
+  (println (str   "\n" (sort (for [f fgear r rgear ] (/ f r)))))  ;; creates sorted output  ;; 27/2/2016
+;; really want each item in list to be on separate line  

@@ -22,6 +22,6 @@
     .pack
     .show))
  
-(make-frame (make-panel) ; (System/exit 0))    
-             )
+(make-frame (make-panel)) ;; (System/exit 0))    
+             
  
