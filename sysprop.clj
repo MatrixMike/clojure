@@ -72,4 +72,4 @@
 
 (str "user name: " (System/getProperty prope))
 
-
+(println (str "user name: " (System/getProperty prope)))

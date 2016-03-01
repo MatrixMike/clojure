@@ -6,4 +6,6 @@ The origin source is shown where mods have been made.
 
 Some examples are original work - they will be cleaned up at a later date...
 
-Also - learning how to use git...
+Also - learning how to use git...   and gitk.
+used clojure V 1.8 here 24/2/2016
+

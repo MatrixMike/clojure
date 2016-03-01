@@ -1,0 +1,13 @@
+Questions for clojure meeting
+;; 27/2/2016
+
+REPL in 1.4 supports up/down keys for browsing through history but 1.8 does not -> needs extra ... on CL
+
+how to cleanly exit in string-eye.clj, javax-swing.clj
+
+how to read a stream of data from a file ( sudoku )
+
+print (in colour) the cheatsheet
+
+pprint one of my objects
+

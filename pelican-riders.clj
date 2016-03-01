@@ -29,3 +29,4 @@
 
 ;; (cstr/join ( cons (first greeting) (last greeting)))
 
+(println (hello-riders))
