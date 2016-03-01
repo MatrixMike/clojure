@@ -1,0 +1,89 @@
+[mikeh@Inspiron1501 clojure18]$ clojure 
+Clojure 1.8.0
+user=> (import '(java.io BufferedReader StringReader))
+
+;; line terminators are stripped
+user=> (line-seq (BufferedReader. (StringReader. "1\n2\n\n3")))
+("1" "2" "" "3")java.io.StringReader
+user=> user=> user=> CompilerException java.lang.RuntimeException: Unable to resolve symbol: user=> in this context, compiling:(NO_SOURCE_PATH:0:0) 
+("1" "2" "" "3")
+user=> (with-open [rdr (clojure.java.io/reader "/etc/passwd")]
+         (count (line-seq rdr)))ClassCastException java.lang.String cannot be cast to clojure.lang.IFn  user/eval7 (NO_SOURCE_FILE:5)
+
+33
+user=> (with-open [rdr (clojure.java.io/reader "/etc/passwd")]
+         (count (line-seq rdr))     
+
+^C[mikeh@Inspiron1501 clojure18]$ clojure 
+Clojure 1.8.0
+user=> (with-open [rdr (clojure.java.io/reader "/home/mike/clojureInput.txt")]
+         (count (line-seq rdr)))
+FileNotFoundException /home/mike/clojureInput.txt (Permission denied)  java.io.FileInputStream.open0 (FileInputStream.java:-2)
+user=> (with-open [rdr (clojure.java.io/reader "/home/mike/clojure/clojureInput.txt")]
+         (count (line-seq rdr)))
+FileNotFoundException /home/mike/clojure/clojureInput.txt (Permission denied)  java.io.FileInputStream.open0 (FileInputStream.java:-2)
+user=> (with-open [rdr (clojure.java.io/reader "/home/mikeh/clojure/clojureInput.txt")]
+         (count (line-seq rdr)))
+5
+user=> (nth (line-seq (java.io.BufferedReader. *in*)) 2)
+ten
+eleven
+
+""
+user=> (with-open [rdr (clojure.java.io/reader "/home/mikeh/clojure/clojureInput.txt")]
+                                
+)
+nil
+user=> (with-open [rdr (clojure.java.io/reader "/home/mikeh/clojure/clojureInput.txt")]
+         (count (line-seq rdr)))
+5
+user=> (line-seq)
+ArityException Wrong number of args (0) passed to: core/line-seq  clojure.lang.AFn.throwArity (AFn.java:429)
+user=> ?
+CompilerException java.lang.RuntimeException: Unable to resolve symbol: ? in this context, compiling:(NO_SOURCE_PATH:0:0) 
+user=> (with-open [rdr (clojure.java.io/reader "/home/mikeh/clojure/clojureInput.txt")]
+         (count (line-seq rdr)))
+6
+user=> (line-seq)
+ArityException Wrong number of args (0) passed to: core/line-seq  clojure.lang.AFn.throwArity (AFn.java:429)
+user=> (read)
+ape bag cat
+ape
+CompilerException java.lang.RuntimeException: Unable to resolve symbol: bag in this context, compiling:(NO_SOURCE_PATH:0:0) 
+#object[clojure.core$cat 0x407a7f2a "clojure.core$cat@407a7f2a"]
+user=> (import '(java.io BufferedReader StringReader))
+java.io.StringReader
+user=> (read)
+ape bag cat
+ape
+CompilerException java.lang.RuntimeException: Unable to resolve symbol: bag in this context, compiling:(NO_SOURCE_PATH:0:0) 
+#object[clojure.core$cat 0x407a7f2a "clojure.core$cat@407a7f2a"]
+user=> (read) ape
+ape
+user=> (read)
+ape
+ape
+user=> (read-line)
+ape bag cat
+"ape bag cat"
+user=>   (slurp "somefile.txt")
+FileNotFoundException somefile.txt (No such file or directory)  java.io.FileInputStream.open0 (FileInputStream.java:-2)
+user=> (slurp "/home/mikeh/clojure/clojureInput.txt")
+"test\nfile\none\ntwo\nthree\nfour\n"
+user=> (def filename "/home/mikeh/clojure/clojureInput.txt")
+#'user/filename
+user=> filename
+"/home/mikeh/clojure/clojureInput.txt"
+user=> (slurp filename)
+"test\nfile\none\ntwo\nthree\nfour\n"
+user=> (dir)
+ArityException Wrong number of args (0) passed to: repl/dir  clojure.lang.Compiler.macroexpand1 (Compiler.java:6781)
+user=> *ns*
+#object[clojure.lang.Namespace 0x20d7d6fb "user"]
+user=> ns-name
+#object[clojure.core$ns_name 0x11d8ae8b "clojure.core$ns_name@11d8ae8b"]
+user=> (ns-name)
+ArityException Wrong number of args (0) passed to: core/ns-name  clojure.lang.AFn.throwArity (AFn.java:429)
+user=> (*ns*)
+ClassCastException clojure.lang.Namespace cannot be cast to clojure.lang.IFn  user/eval41 (NO_SOURCE_FILE:40)
+user=>  
