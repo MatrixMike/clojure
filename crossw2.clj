@@ -4,7 +4,7 @@
 
 ;; 
 (ns tutorial.core
-(:require   [clojure.string :as cstr]
+(:use   [clojure.string :as cstr]
             [clojure.set :as cset]))
 
 (def word1 "storage")
