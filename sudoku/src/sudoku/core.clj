@@ -86,6 +86,7 @@
 
 (println tobechecked)
 (println (poss3d))
+(println "\u03a9")  ;; Omega resistance 
 	)
 
 
