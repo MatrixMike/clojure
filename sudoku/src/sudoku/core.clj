@@ -73,6 +73,17 @@
 ;; usage for poss3d -> setup sn1, sn2, sn3 like (def sn1 "19753") then invoke function with (poss3d)
 
 (defn -main [& args]
+
+;;(doseq [arg *command-line-args*]
+	(def ws1 (set args))
+
+	;;(printf "arg='%s'    \n" arg)
+	(println ws1)
+;;		 )
+
+
+
+
 (println tobechecked)
 (println (poss3d))
 	)
