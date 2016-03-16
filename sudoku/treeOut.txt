@@ -1,0 +1,36 @@
+.
+├── classes
+│   └── sudoku
+│       ├── core.class
+│       ├── core$crossdiff3.class
+│       ├── core$crossdiff.class
+│       ├── core$crossw2.class
+│       ├── core$fn__51.class
+│       ├── core$fn__62.class
+│       ├── core$fn__62$iter__56__63.class
+│       ├── core$fn__62$iter__56__63$fn__64.class
+│       ├── core$fn__62$iter__56__63$fn__64$iter__58__65.class
+│       ├── core$fn__62$iter__56__63$fn__64$iter__58__65$fn__66.class
+│       ├── core$fn__62$iter__56__63$fn__64$iter__58__65$fn__66$fn__67.class
+│       ├── core__init.class
+│       ├── core$loading__5569__auto____49.class
+│       ├── core$_main.class
+│       └── core$poss3d.class
+├── lib
+│   └── clojure-1.8.0.jar
+├── project.clj
+├── README
+├── src
+│   └── sudoku
+│       ├── core.clj
+│       └── tutorial.txt
+├── sudoku-1.0.1-SNAPSHOT.jar
+├── sudoku-1.0.1-SNAPSHOT-standalone.jar
+├── test
+│   └── sudoku
+│       └── test
+│           └── core.clj
+├── testOut.txt
+└── treeOut.txt
+
+8 directories, 25 files
