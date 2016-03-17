@@ -25,6 +25,7 @@
     (.add panel)
     .pack
 ;; add close command here
+ (.setDefaultCloseOperation JFrame/EXIT_ON_CLOSE)
     .show))
  
  
