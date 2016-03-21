@@ -1,11 +1,9 @@
 (ns stringeye.core
 (:gen-class)
-;;)
 
-;;(ns drawing-demo
+
   (:import [javax.swing JPanel JFrame]
            [java.awt Dimension])
-
   )         
 ; Date  13.05.2015 14:24:59
  ;; Fri 18 Mar 2016 01:17:34 AEDT 
