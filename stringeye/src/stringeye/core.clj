@@ -16,6 +16,7 @@
                  (doseq [j (range lowerR upperR step)] (.drawLine g j upperR   upperR (- upperR j)))
      ))]
     (doto panel
+   
       (.setPreferredSize (Dimension. (+ upperR 50) (+ upperR 50))))))
  
 (defn make-frame [panel]
@@ -23,6 +24,7 @@
     (.add panel)
     .pack
 ;; add close command here
+ ;; (.setBackground (. Color YELLOW))
  (.setDefaultCloseOperation JFrame/EXIT_ON_CLOSE)
     .show))
  
