@@ -1,6 +1,17 @@
 # sudoku
+# 22.03.2016 23:58:43
+Description
+This is a very elementary clojure program that I currently 
+find useful and interesting in my thinking about solving sudoku puzzles.
 
-FIXME: write description
+To run this :
+git clone <repo URL>
+install lein -> sudo apt-get install lein    <- on Linux
+cd <repo name>
+lein uberjar
+java -jar < standalone version >
+
+
 
 ## Usage
 
@@ -8,6 +19,4 @@ FIXME: write
 
 ## License
 
-Copyright (C) 2016 FIXME
 
-Distributed under the Eclipse Public License, the same as Clojure.
