@@ -86,7 +86,8 @@
 
 (println tobechecked)
 (println (poss3d))
-(println "\u03a9")  ;; Omega resistance 
+(println "\u03bb")  ;; lambda
+(println "\u03a9")  ;; Omega resistance ;; notice Gnome Character map based on Unicode Character Database 6.3.0
 	)
 
 
