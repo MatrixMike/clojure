@@ -1,7 +1,8 @@
 ;; (ns instance1.core)
+;; checking out new compile directives etc 
+;; knowledge of git has increased so will commit more often 
 
-
-(ns clojure.examples.instance
+(ns instance1
     (:gen-class
      :implements [java.util.Iterator]
      :init init
