@@ -72,13 +72,14 @@
      (clojure.set/difference (set sword) (set sn3))))
 ;; usage for poss3d -> setup sn1, sn2, sn3 like (def sn1 "19753") then invoke function with (poss3d)
 
-(defn -main [& args]
-
+(defn -main [zone1 zone2 zone3]   ;; one way to force 3 strings as input
+ (def zonetobechecked (seq [zone1 zone2 zone3]))
 ;;(doseq [arg *command-line-args*]
-	(def ws1 (set args))
+	;;  (def ws1 (set args))
 
 	;;(printf "arg='%s'    \n" arg)
-	(println ws1)
+	;; (println ws1)
+	(println zonetobechecked )
 ;;		 )
 
 
