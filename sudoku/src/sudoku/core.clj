@@ -63,7 +63,7 @@
 
 ;; (clojure.set/intersection (clojure.set/difference (set sword) (set sn1)) (clojure.set/difference (set sword) (set sn2)) (clojure.set/difference (set sword) (set sn3)))
 
-(def sn1 "123") (def sn2 "234") (def sn3 "345")
+(def sn1 "23") (def sn2 "234") (def sn3 "345")
  (def tobechecked (seq [sn1 sn2 sn3]))
 
 (defn poss3d [] (clojure.set/intersection 
@@ -86,22 +86,29 @@
 
 	;;(printf "arg='%s'    \n" arg)
 	;; (println ws1)
-	(println zonetobechecked )
+
 ;;		 )
 
 
 
 
 (println tobechecked)
-(println (poss3d))
+(println (str "output from poss3d  :" (poss3d)))
 (println "\u03bb")  ;; lambda
 (println "\u03a9")  ;; Omega resistance ;; notice Gnome Character map based on Unicode Character Database 6.3.0
 
+(println zonetobechecked )
 (println (doseq [z zonetobechecked ]
-   (clojure.set/intersection (clojure.set/difference (set sword) (set z) ))
+   (clojure.set/intersection (clojure.set/difference (set sword) (set z) )) 
+    ;; suspect (set z) not doing what I want
     )  )
-    
-    
+
+(println (doseq [z zonetobechecked ]    ))
+  (doseq   [z zonetobechecked ] (println z))
 	)
 
-
+;; DOSEQ: Repeatedly executes body (presumably for side-effects) with
+;; bindings and filtering as provided by "for".  Does not retain
+;; the head of the sequence. Returns nil.
+;;; The 'returns nil' helps to explain why println outside doseq gives nil -> examples show 
+;;; other way around.
