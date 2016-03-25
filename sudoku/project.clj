@@ -1,4 +1,4 @@
-(defproject sudoku "1.0.2-SNAPSHOT"
+(defproject sudoku "1.0.3-SNAPSHOT"
   :description "sudoku helper V1.1"
   :dependencies [[org.clojure/clojure "1.8.0"]]
 

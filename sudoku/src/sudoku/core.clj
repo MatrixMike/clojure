@@ -75,27 +75,24 @@
 
 
 (defn -main [zone1 zone2 zone3]   ;; one way to force 3 strings as input
+(def zonetobechecked (seq [zone1 zone2 zone3]))
 (defn poss3da [] 
 (clojure.set/intersection 
      (clojure.set/difference (set sword) (set zone1)) 
      (clojure.set/difference (set sword) (set zone2)) 
      (clojure.set/difference (set sword) (set zone3))))
 ;; usage for poss3da -> setup sn1, sn2, sn3 like (def sn1 "19753") then invoke function with (poss3d)
- (def zonetobechecked (seq [zone1 zone2 zone3]))
+
 ;;(doseq [arg *command-line-args*]
 	;;  (def ws1 (set args))
 	(println poss3da)
-
 	;;(printf "arg='%s'    \n" arg)
 	;; (println ws1)
-
 ;;		 )
 
-
-
-
-(println tobechecked)
-(println (str "output from poss3d  :" (poss3d)))
+;;(println tobechecked)
+;;(println (str "output from poss3d  :" (poss3d)))
+(println (str "output from poss3da  :" (poss3da)))
 (println "\u03bb")  ;; lambda
 (println "\u03a9")  ;; Omega resistance ;; notice Gnome Character map based on Unicode Character Database 6.3.0
 
@@ -104,11 +101,11 @@
    (println(clojure.set/intersection (clojure.set/difference (set sword) (set z) ) ))
    ;; repeated diff working but need different construct to 'save' the intermediate o/p 
    ;;for use as i/p to intersection
-   
+   ;; currently generates one line per CL parameter
     )  
 
-(println (doseq [z zonetobechecked ]    ))
-  (doseq   [z zonetobechecked ] (println z))
+;;(println (doseq [z zonetobechecked ]    ))  ;; outputs nil {doseq inside println}
+;; (doseq   [z zonetobechecked ] (println z))
 	)
 
 ;; DOSEQ: Repeatedly executes body (presumably for side-effects) with
