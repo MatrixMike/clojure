@@ -98,10 +98,10 @@
 (println "\u03a9")  ;; Omega resistance ;; notice Gnome Character map based on Unicode Character Database 6.3.0
 
 (println zonetobechecked )
-(println (doseq [z zonetobechecked ]
-   (clojure.set/intersection (clojure.set/difference (set sword) (set z) )) 
+ (doseq [z zonetobechecked ]
+   (println(clojure.set/intersection (clojure.set/difference (set sword) (set z) )) )
     ;; suspect (set z) not doing what I want
-    )  )
+    )  
 
 (println (doseq [z zonetobechecked ]    ))
   (doseq   [z zonetobechecked ] (println z))
@@ -112,3 +112,4 @@
 ;; the head of the sequence. Returns nil.
 ;;; The 'returns nil' helps to explain why println outside doseq gives nil -> examples show 
 ;;; other way around.
+;;; https://clojuredocs.org/clojure.core/doseq
