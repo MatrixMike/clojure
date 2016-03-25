@@ -99,7 +99,7 @@
 
 (println zonetobechecked )
  (doseq [z zonetobechecked ]
-   (println(clojure.set/intersection (clojure.set/difference (set sword) (set z) )) )
+   (println(clojure.set/intersection clojure.set/difference (set sword) (set z) ) )
     ;; suspect (set z) not doing what I want
     )  
 
