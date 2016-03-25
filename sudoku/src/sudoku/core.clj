@@ -72,17 +72,19 @@
      (clojure.set/difference (set sword) (set sn3))))
 ;; usage for poss3d -> setup sn1, sn2, sn3 like (def sn1 "19753") then invoke function with (poss3d)
 
-(defn poss3da [] 
-(clojure.set/intersection 
-     (clojure.set/difference (set sword) (set sn1)) 
-     (clojure.set/difference (set sword) (set sn2)) 
-     (clojure.set/difference (set sword) (set sn3))))
-;; usage for poss3da -> setup sn1, sn2, sn3 like (def sn1 "19753") then invoke function with (poss3d)
+
 
 (defn -main [zone1 zone2 zone3]   ;; one way to force 3 strings as input
+(defn poss3da [] 
+(clojure.set/intersection 
+     (clojure.set/difference (set sword) (set zone1)) 
+     (clojure.set/difference (set sword) (set zone2)) 
+     (clojure.set/difference (set sword) (set zone3))))
+;; usage for poss3da -> setup sn1, sn2, sn3 like (def sn1 "19753") then invoke function with (poss3d)
  (def zonetobechecked (seq [zone1 zone2 zone3]))
 ;;(doseq [arg *command-line-args*]
 	;;  (def ws1 (set args))
+	(println poss3da)
 
 	;;(printf "arg='%s'    \n" arg)
 	;; (println ws1)
