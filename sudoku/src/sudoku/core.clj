@@ -99,8 +99,10 @@
 
 (println zonetobechecked )
  (doseq [z zonetobechecked ]
-   (println(clojure.set/intersection clojure.set/difference (set sword) (set z) ) )
-    ;; suspect (set z) not doing what I want
+   (println(clojure.set/intersection (clojure.set/difference (set sword) (set z) ) ))
+   ;; repeated diff working but need different construct to 'save' the intermediate o/p 
+   ;;for use as i/p to intersection
+   
     )  
 
 (println (doseq [z zonetobechecked ]    ))
