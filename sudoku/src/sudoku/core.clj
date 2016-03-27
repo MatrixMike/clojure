@@ -64,6 +64,7 @@
 ;; (clojure.set/intersection (clojure.set/difference (set sword) (set sn1)) (clojure.set/difference (set sword) (set sn2)) (clojure.set/difference (set sword) (set sn3)))
 
 (def sn1 "23") (def sn2 "234") (def sn3 "345")
+;;(def zone1 "1") (def zone2 "2") (def zone3 "3")
  (def tobechecked (seq [sn1 sn2 sn3]))
 
 (defn poss3d [] (clojure.set/intersection 
@@ -72,27 +73,28 @@
      (clojure.set/difference (set sword) (set sn3))))
 ;; usage for poss3d -> setup sn1, sn2, sn3 like (def sn1 "19753") then invoke function with (poss3d)
 
+(defn poss3da [zone1a zone2a zone3a] 
+(clojure.set/intersection 
+     (clojure.set/difference (set sword) (set zone1a)) 
+     (clojure.set/difference (set sword) (set zone2a)) 
+     (clojure.set/difference (set sword) (set zone3a))))
+;; usage for poss3da -> setup sn1, sn2, sn3 like (def sn1 "19753") then invoke function with (poss3d)
 
 
 (defn -main [zone1 zone2 zone3]   ;; one way to force 3 strings as input
 (def zonetobechecked (seq [zone1 zone2 zone3]))
-(defn poss3da [] 
-(clojure.set/intersection 
-     (clojure.set/difference (set sword) (set zone1)) 
-     (clojure.set/difference (set sword) (set zone2)) 
-     (clojure.set/difference (set sword) (set zone3))))
-;; usage for poss3da -> setup sn1, sn2, sn3 like (def sn1 "19753") then invoke function with (poss3d)
+
 
 ;;(doseq [arg *command-line-args*]
 	;;  (def ws1 (set args))
-	(println poss3da)
+	(println poss3da zone1 zone2 zone3)
 	;;(printf "arg='%s'    \n" arg)
 	;; (println ws1)
 ;;		 )
 
 ;;(println tobechecked)
 ;;(println (str "output from poss3d  :" (poss3d)))
-(println (str "output from poss3da  :" (poss3da)))
+(println (str "output from poss3da  :" (poss3da zone1 zone2 zone3)))
 (println "\u03bb")  ;; lambda
 (println "\u03a9")  ;; Omega resistance ;; notice Gnome Character map based on Unicode Character Database 6.3.0
 
