@@ -6,4 +6,6 @@
   :dependencies [[org.clojure/clojure "1.8.0"]]
 
 :main stringeye.core
+  :aot :all
+  :omit-source true
 )
