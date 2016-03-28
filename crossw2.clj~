@@ -46,7 +46,7 @@
 
 
 
-;; (crossw2 "Mike" "Hewitt")
+(crossw2 "Mike" "Hewitt")
 ;
 
 (def newwords ( seq [word1 word2 word5 word4 word3 word6 word7]))
@@ -56,10 +56,9 @@
 
 ;; (clojure.set/intersection (clojure.set/difference (set sword) (set sn1)) (clojure.set/difference (set sword) (set sn2)) (clojure.set/difference (set sword) (set sn3)))
 
-(def sn1 "123") (def sn2 "234") (def sn3 "345")
+
 
 (defn poss3d [] (clojure.set/intersection (clojure.set/difference (set sword) (set sn1)) (clojure.set/difference (set sword) (set sn2)) (clojure.set/difference (set sword) (set sn3))))
 ;; usage for poss3d -> setup sn1, sn2, sn3 like (def sn1 "19753") then invoke function with (poss3d)
 
-(println (poss3d))
 

@@ -1,0 +1,7 @@
+Pushing to https://github.com/MatrixMike/clojure.git
+POST git-receive-pack (518 bytes)
+To https://github.com/MatrixMike/clojure.git
+   fc520ea..034832b  master -> master
+updating local tracking ref 'refs/remotes/origin/master'
+
+
