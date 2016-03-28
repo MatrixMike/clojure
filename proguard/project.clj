@@ -10,6 +10,8 @@
   :aot :all
 ;;; Remove source .clj files from the resulting jar
   :omit-source true
+  
+;; http://proguard.sourceforge.net/manual/usage.html  
   )
   
   
