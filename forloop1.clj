@@ -1,3 +1,7 @@
+;; clojure program to generate all possible values of gear
+;; ratios for Mike's white bike  (ex PB)
+
+
 (def digits (seq [1 2 3]))
 (for [x1 digits x2 digits] (* x1 x2))
 ;
@@ -36,7 +40,11 @@
 
 (for [f fgear r rgear ] (/ f r))  ;; creates unsorted output
 
-(sort (for [f fgear r rgear ] (/ f r))  ) ;;  now a sorted list 22/2/2016
+ (doseq n     (sort (for [f fgear r rgear ] (/ f r))  ) ;;  now a sorted list 22/2/2016
+ (println n)
+ )
+ 
+ 
 ;
   (println (str   "\n" (sort (for [f fgear r rgear ] (/ f r)))))  ;; creates sorted output  ;; 27/2/2016
 ;; really want each item in list to be on separate line  
