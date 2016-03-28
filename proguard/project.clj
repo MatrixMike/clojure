@@ -6,7 +6,10 @@
   :dependencies [[org.clojure/clojure "1.8.0"]]
   :aot :all
   :main proguard.core
-  
+;;; Make sure everything is aot compiled
+  :aot :all
+;;; Remove source .clj files from the resulting jar
+  :omit-source true
   )
   
   
