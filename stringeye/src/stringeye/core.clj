@@ -17,13 +17,13 @@
       (.setPreferredSize (Dimension. (+ upperR 50) (+ upperR 50))))))
  
 (defn make-frame [panel]
-  (doto   (new JFrame) ;; (JFrame.) 
-    (.add panel)
-    .pack
-;; add close command here
- ;; (.setBackground (. Color YELLOW))
- (.setDefaultCloseOperation JFrame/EXIT_ON_CLOSE)
-    .show))
+  (doto   (new JFrame "StringEye") ;; (JFrame.) ;;   give a title to the Window
+  (.add panel)
+   .pack
+                              ;; add close command here
+                              ;; (.setBackground (. Color YELLOW))
+  (.setDefaultCloseOperation JFrame/EXIT_ON_CLOSE)
+   .show))
  
 (defn -main [& args] 
 
