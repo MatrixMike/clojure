@@ -97,7 +97,7 @@
 (println (str "output from poss3da  :" (poss3da zone1 zone2 zone3)))
 (println "\u03bb")  ;; lambda
 (println "\u03a9")  ;; Omega resistance ;; notice Gnome Character map based on Unicode Character Database 6.3.0
-(println "\u01F030")  ;; dominos
+(println "\u01F030")  ;; dominos ; view-source:http://www.unicode.org/charts/beta/nameslist/n_1F030.html
 
 (println zonetobechecked )
  (doseq [z zonetobechecked ]
