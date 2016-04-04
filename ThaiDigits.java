@@ -70,6 +70,7 @@ public class ThaiDigits extends JPanel {
       NumberFormat nf = NumberFormat.getNumberInstance(locale);
       outputString = outputString + locale.toString() + ": ";
       outputString = outputString + nf.format(573.34) + "\n";
+      outputString = outputString + nf.format(123456789.0) + "\n";
     }
 
     StyledDocument styledDoc = textPane.getStyledDocument();
