@@ -87,5 +87,5 @@
 (showProp propc)
 (showProp propd)
 (showProp prope)
-(showProp propf)
+(println (showProp propf))
 
