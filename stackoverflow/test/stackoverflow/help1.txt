@@ -1,0 +1,15 @@
+Mon 17 Apr 2017 15:14:36 AEST 
+for lein version 2.7.1 :  {this is from Linux Mint with Leiningen 2.7.1 on Java 1.8.0_121 Java HotSpot(TM) 64-Bit Server VM }
+I wanted to do more with testing and now have this new knowledge...
+
+lein new <projname>
+cd <projname>
+tree -d
+cat test/<projname>/core_test.clj 
+lein test
+ -> observe failing test template even on blank new project
+
+then you could add:   (print "start adding test")
+and see your efforts ...
+
+
