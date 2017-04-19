@@ -83,7 +83,15 @@
 
 (defn -main [zone1 zone2 zone3]   ;; one way to force 3 strings as input
 (def zonetobechecked (seq [zone1 zone2 zone3]))
-
+(def word1 "storage")
+(def word2 "capacitor")
+(def word3 "electrolytic")
+(def word4 "tantalum")
+(def word5 "positive")
+(def word6 "negative")
+(def word7 "zinc")
+(def sword "987654321")		;; added for sudoku
+(def sword1 "9278")		;; added for sudoku
 
 ;;(doseq [arg *command-line-args*]
 	;;  (def ws1 (set args))
@@ -99,7 +107,9 @@
 (println "\u03a9")  ;; Omega resistance ;; notice Gnome Character map based on Unicode Character Database 6.3.0
 (println "\u01F030")  ;; dominos ; view-source:http://www.unicode.org/charts/beta/nameslist/n_1F030.html
 
-(println zonetobechecked )
+;;(println zonetobechecked )
+(def newwords ( seq [word1 word2 word5 word4 word3 word6 word7]))
+(for [a newwords  b newwords ]    ( crossw2 a b))
  (doseq [z zonetobechecked ]
    (println(clojure.set/intersection (clojure.set/difference (set sword) (set z) ) ))
    ;; repeated diff working but need different construct to 'save' the intermediate o/p 
@@ -109,6 +119,8 @@
 
 ;;(println (doseq [z zonetobechecked ]    ))  ;; outputs nil {doseq inside println}
 ;; (doseq   [z zonetobechecked ] (println z))
+
+;
 	)
 
 ;; DOSEQ: Repeatedly executes body (presumably for side-effects) with
