@@ -1,7 +1,9 @@
 (ns stringeye.core
  (:gen-class)
   (:import [javax.swing JPanel JFrame]
-           [java.awt Dimension])
+           [javax.swing SwingUtilities]
+           [java.awt Dimension]
+           [java.awt.Color])
 )         
 ; Date  13.05.2015 14:24:59
  ;; Fri 18 Mar 2016 01:17:34 AEDT 
@@ -22,6 +24,8 @@
    .pack
                               ;; add close command here
                               ;; (.setBackground (. Color YELLOW))
+                              ;;  f.getContentPane().setBackground(new Color(107, 106, 104));
+                             ;;  ( .getContentPane.setBackground     YELLOW) )
   (.setDefaultCloseOperation JFrame/EXIT_ON_CLOSE)
    .show))
  
