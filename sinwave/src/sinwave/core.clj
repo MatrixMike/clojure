@@ -3,7 +3,9 @@
 ;;  19.03.2016 20:59:01
 
   (:import [javax.swing JPanel JFrame]
-           [java.awt Dimension])
+           [javax.swing SwingUtilities]
+           [java.awt Dimension]
+           [java.awt.Color])
    )
          
 ; Date  13.05.2015 14:24:59
@@ -12,8 +14,9 @@
 (def theta (/ 360 sides))
 (def halfangle (/ theta 2))
 
-(defn sinfunc [x]( Math/sin ( (+ (* theta (. Math PI) x) halfangle  ) ) ) )
-(defn cosfunc [x](* theta (. Math PI) x))
+;;  fix this  (defn sinfunc [x]( Math/sin ( (+ (* theta (. Math PI) x) halfangle  ) ) ) )
+(defn sinfunc [x](* theta (. Math PI) x)) 
+(defn cosfunc [x](* theta (. Math PI) x))   ;; consider to be OK 
  
 (def upperR 1) 
 (def lowerR 0) 
@@ -45,6 +48,8 @@
    .show))
 
 (defn -main [& args] 
+( println   (sinfunc 0.5)  )
+( println   (cosfunc 0.5)  )
   (make-frame (make-panel)) 
 )
  
