@@ -18,9 +18,9 @@
 (defn sinfunc [x](* theta (. Math PI) x)) 
 (defn cosfunc [x](* theta (. Math PI) x))   ;; consider to be OK 
  
-(def upperR 1) 
-(def lowerR 0) 
-(def step 0.2)
+(def upperR 1.0) 
+(def lowerR 0.0) 
+(def step 0.02)
 
 (defn make-panel []
   (let [panel (proxy [JPanel] []
