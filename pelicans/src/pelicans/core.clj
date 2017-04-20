@@ -1,4 +1,5 @@
-(ns tutorial.core
+(ns pelicans.core
+(:gen-class )
 (:require   [clojure.string :as cstr]
             [clojure.set :as cset]))
 
@@ -29,4 +30,7 @@
 
 ;; (cstr/join ( cons (first greeting) (last greeting)))
 
+
+(defn -main [& args]
 (println (hello-riders))
+)

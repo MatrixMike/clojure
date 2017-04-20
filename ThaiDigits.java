@@ -31,6 +31,10 @@
 
 
 /* ThaiDigits.java requires no other files. */
+
+// https://docs.oracle.com/javase/tutorial/i18n/locale/examples/ThaiDigits.java
+
+
 import java.awt.*;
 import java.text.NumberFormat;
 import java.util.Locale;
@@ -62,11 +66,15 @@ public class ThaiDigits extends JPanel {
     add(scrollPane, c);
 
     String outputString = new String();
-    Locale[] thaiLocale = {
+    Locale[] thaiLocale = {    // mjh: create an array of locale variants
+			new Locale("ru"),
+						new Locale("ru","Cyrl"),
+	new Locale("ko"),
+    new Locale("ja","JP"),
       new Locale("th"),
       new Locale("th", "TH"),
       new Locale("th", "TH", "TH")};
-    for (Locale locale : thaiLocale) {
+    for (Locale locale : thaiLocale) {  //  loop through all the choices in the array
       NumberFormat nf = NumberFormat.getNumberInstance(locale);
       outputString = outputString + locale.toString() + ": ";
       outputString = outputString + nf.format(573.34) + "\n";
