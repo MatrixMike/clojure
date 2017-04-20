@@ -21,8 +21,8 @@
 
 (defn make-panel []
   (let [panel (proxy [JPanel] []
-              (paintComponent [g]
-              (doseq [j (range lowerR upperR step)] (.drawLine g j  (sinfunc   j )  0      (cosfunc   j )))
+          (paintComponent [g]
+          (doseq [j (range lowerR upperR step)] (.drawLine g j  (sinfunc   j )  0      (cosfunc   j )))
                 ; (doseq [j (range lowerR upperR step)] (.drawLine g j upperR   upperR (- upperR j)))
      ))]
     (doto panel
@@ -34,12 +34,15 @@
  ;  ( Math/sin j)
  
 (defn make-frame [panel]
-  (doto (JFrame.)        ;;was (new JFrame)
-    (.add panel)
-    .pack
-    (.setDefaultCloseOperation JFrame/EXIT_ON_CLOSE)
-    .show))
-
+  (doto   (new JFrame "Sine Wave") ;; (JFrame.) ;;   give a title to the Window
+  (.add panel)
+   .pack
+                              ;; add close command here
+                              ;; (.setBackground (. Color YELLOW))
+                              ;;  f.getContentPane().setBackground(new Color(107, 106, 104));
+                             ;;  ( .getContentPane.setBackground     YELLOW) )
+  (.setDefaultCloseOperation JFrame/EXIT_ON_CLOSE)
+   .show))
 
 (defn -main [& args] 
   (make-frame (make-panel)) 

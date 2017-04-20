@@ -3,4 +3,5 @@
   :dependencies [[org.clojure/clojure "1.8.0"]]
   
   :main sinwave.core
+  :aot :all
   )
