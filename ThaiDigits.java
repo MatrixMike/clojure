@@ -67,18 +67,20 @@ public class ThaiDigits extends JPanel {
 
     String outputString = new String();
     Locale[] thaiLocale = {    // mjh: create an array of locale variants
-			new Locale("ru"),
-						new Locale("ru","Cyrl"),
+	new Locale("ru"),
+	new Locale("ru","Cyrl"),
 	new Locale("ko"),
     new Locale("ja","JP"),
-      new Locale("th"),
-      new Locale("th", "TH"),
-      new Locale("th", "TH", "TH")};
+    new Locale("th"),
+    new Locale("th", "TH"),
+    new Locale("th", "TH", "TH")};
+    
     for (Locale locale : thaiLocale) {  //  loop through all the choices in the array
       NumberFormat nf = NumberFormat.getNumberInstance(locale);
       outputString = outputString + locale.toString() + ": ";
-      outputString = outputString + nf.format(573.34) + "\n";
+      outputString = outputString + nf.format(573.54) + "\n";
       outputString = outputString + nf.format(1234567890.0) + "\n";
+      System.out.print(outputString);
     }
 
     StyledDocument styledDoc = textPane.getStyledDocument();
