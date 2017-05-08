@@ -49,7 +49,9 @@
 
 (defn -main [& args] 
 ( println   (sinfunc 0.5)  )
-( println   (cosfunc 0.5)  )
+(printf "test %3.3f\n" 18.7856)
+( printf  "%3.3f" (cosfunc 0.5)  )
+
   (make-frame (make-panel)) 
 )
  
