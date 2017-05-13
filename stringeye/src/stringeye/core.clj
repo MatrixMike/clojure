@@ -1,9 +1,11 @@
 (ns stringeye.core
  (:gen-class)
+;;  (:import utils.demo)
   (:import [javax.swing JPanel JFrame]
            [javax.swing SwingUtilities]
            [java.awt Dimension]
-           [java.awt.Color])
+           [java.awt.Color]
+           [utils.demo])
 )         
 ; Date  13.05.2015 14:24:59
  ;; Fri 18 Mar 2016 01:17:34 AEDT 
@@ -16,7 +18,7 @@
                  (doseq [j (range lowerR upperR step)] (.drawLine g j upperR   upperR (- upperR j)))
      ))]
     (doto panel
-      (.setPreferredSize (Dimension. (+ upperR 50) (+ upperR 50))))))
+      (.setPreferredSize (Dimension. (. demo addvals upperR 50) (+ upperR 50))))))
  
 (defn make-frame [panel]
   (doto   (new JFrame "StringEye") ;; (JFrame.) ;;   give a title to the Window

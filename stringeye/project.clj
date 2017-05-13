@@ -1,4 +1,4 @@
-(defproject stringeye "0.1.0-SNAPSHOT"
+(defproject stringeye "0.1.1-SNAPSHOT"
   :description "stringeye"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
