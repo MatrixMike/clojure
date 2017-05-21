@@ -4,7 +4,7 @@
   (:import [javax.swing JPanel JFrame]
            [javax.swing SwingUtilities]
            [java.awt Dimension]
-           [java.awt.Color]
+           [java.awt Color]
            [utils.demo])
 )         
 ; Date  13.05.2015 14:24:59
@@ -14,11 +14,13 @@
 (defn make-panel []
   (let [panel (proxy [JPanel] []
                 (paintComponent [g]
+                          (doto g       (.setColor Color/BLUE)) 
                  (doseq [j (range lowerR upperR step)] (.drawLine g j 0        0      (- upperR j)))
+                           (doto g       (.setColor Color/RED)) 
                  (doseq [j (range lowerR upperR step)] (.drawLine g j upperR   upperR (- upperR j)))
      ))]
     (doto panel
-      (.setPreferredSize (Dimension. (. demo addvals upperR 50) (+ upperR 50))))))
+      (.setPreferredSize (Dimension. (+ upperR 50) (+ upperR 50))))))   ;; 
  
 (defn make-frame [panel]
   (doto   (new JFrame "StringEye") ;; (JFrame.) ;;   give a title to the Window
