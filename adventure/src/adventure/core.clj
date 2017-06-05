@@ -1,5 +1,5 @@
-(ns adventure.core)
-(:gen-class )
+(ns adventure.core
+(:gen-class ))
 ;;(defn foo
 ;;  "I don't do a whole lot."
 ;;  [x]
