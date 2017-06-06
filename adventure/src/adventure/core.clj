@@ -1,9 +1,5 @@
 (ns adventure.core
 (:gen-class ))
-;;(defn foo
-;;  "I don't do a whole lot."
-;;  [x]
-;;  (println x "Hello, World!"))
 
 (def objects '(whiskey-bottle bucket frog chain))
 
@@ -37,8 +33,8 @@
   (first (location game-map)))
 
 ;; in clojure backquote mode, the ~ escapes the mode instead of the comma
-(defn describe-path [path]
-  `(there is a ~(second path) going ~(first path) from here -))
+(defn describe-path [path1]
+  `(there is a ~(second path1) going ~(first path1) from here -))
 
 (defn describe-paths [location game-map]
   (apply concat (map describe-path (rest (get game-map location)))))
