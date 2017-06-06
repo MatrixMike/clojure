@@ -72,6 +72,7 @@
 (defspel pickup [object] `(spel-print (pickup-object '~object)))
 
 (defn inventory []
+  "display the current inventory"
   (filter (fn [x] (is-at? x 'body object-locations)) objects))
 
 (defn have? [object]
