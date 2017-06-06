@@ -103,14 +103,14 @@
 ;            '(the bucket is now full of water))
 ;        :else '(you cannot dunk like that -)))
 
-(defspel game-action [command subj obj place & args]
-  `(defspel ~command [subject# object#]
+(defspel game-action [verb subj obj place & args]
+  `(defspel ~verb [subject# object#]
      `(spel-print (cond (and (= location '~'~place)
                              (= '~subject# '~'~subj)
                              (= '~object# '~'~obj)
                              (have? '~'~subj))
                         ~@'~args
-                        :else '(i cannot ~'~command like that -)))))
+                        :else '(i cannot ~'~verb like that -)))))
 
 (game-action weld chain bucket attic
    (cond (and (have? 'bucket) (def chain-welded true))
