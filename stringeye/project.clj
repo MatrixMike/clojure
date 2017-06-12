@@ -8,4 +8,6 @@
 :main stringeye.core
   :aot :all
   :omit-source true
+;;  :java-source-paths src/utils/demo.java
+  :java-source-paths ["src/utils"]
 )
