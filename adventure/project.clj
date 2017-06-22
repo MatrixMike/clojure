@@ -1,4 +1,4 @@
-(defproject adventure "0.1.2-SNAPSHOT"
+(defproject adventure "0.1.3-SNAPSHOT"
   :description "adventure game from Conrad"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
