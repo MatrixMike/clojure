@@ -3,7 +3,7 @@
 (:require   [clojure.string :as cstr]
             [clojure.set :as cset]))
 
-(def riders ["mike" "graeme" "piet" " " "steve" "" "heinz" "23" "Colin"])
+(def riders ["mike" "graeme" "pIET" " " "steve" "" "heiNZ" "23" "Colin"])
 
 (defn uppercase-first "Returns word with first letter in upper case" 
 	[word]
@@ -27,10 +27,12 @@
 (hello-riders)
 
 ;; ( (first greeting) (last greeting))
-
+;; (clojure.string/lower-case "MiXeD cAsE")
 ;; (cstr/join ( cons (first greeting) (last greeting)))
 
 
 (defn -main [& args]
 (println (hello-riders))
+(println (cstr/lower-case "MiXeD cAsE"))
+(println (cstr/lower-case riders))
 )
