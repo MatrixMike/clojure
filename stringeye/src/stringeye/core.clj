@@ -23,6 +23,15 @@
      ))]
     (doto panel
       (.setPreferredSize (Dimension. (+ upperR 50) (+ upperR 50))))))   ;; 
+      
+ (defn makeLine [x1 y1 x2 y2 n]
+ "generate a list of n co-ords between two points "
+ "(x2-x1)/ (n+1)  is step    "
+ "  (doseq [n "
+ (def Linex (seq []))
+ (def Liney (seq []))
+ )
+ 
  
 (defn make-frame [panel]
   (doto   (new JFrame "StringEye") ;; (JFrame.) ;;   give a title to the Window
