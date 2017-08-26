@@ -18,6 +18,8 @@
                  (doseq [j (range lowerR upperR step)] (.drawLine g j 0        0      (- upperR j)))
                            (doto g       (.setColor Color/RED)) 
                  (doseq [j (range lowerR upperR step)] (.drawLine g j upperR   upperR (- upperR j)))
+                          (doto g       (.setColor Color/GREEN)) 
+                 (doseq [j (range lowerR upperR step)] (.drawLine g  lowerR j  upperR (- upperR j)))
      ))]
     (doto panel
       (.setPreferredSize (Dimension. (+ upperR 50) (+ upperR 50))))))   ;; 
