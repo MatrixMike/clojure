@@ -10,6 +10,7 @@
 ; Date  13.05.2015 14:24:59
  ;; Fri 18 Mar 2016 01:17:34 AEDT 
 (def upperR 400) (def lowerR 0) (def step 5)
+(comment (def mjhTest (. demo twice 200)))
 
 (defn make-panel []
   (let [panel (proxy [JPanel] []
@@ -19,6 +20,7 @@
                            (doto g       (.setColor Color/RED)) 
                  (doseq [j (range lowerR upperR step)] (.drawLine g j upperR   upperR (- upperR j)))
                           (doto g       (.setColor Color/GREEN)) 
+                 (doseq [j (range lowerR upperR step)] (.drawLine g  lowerR j  upperR (- upperR j)))
                  (doseq [j (range lowerR upperR step)] (.drawLine g  lowerR j  upperR (- upperR j)))
      ))]
     (doto panel
