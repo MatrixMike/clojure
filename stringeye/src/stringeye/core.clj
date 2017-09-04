@@ -12,6 +12,10 @@
 (def upperR 400) (def lowerR 0) (def step 5)
 (comment (def mjhTest (. demo twice 200)))
 
+;; Graphics: drawLine(int x1, int y1, int x2, int y2)
+;; https://docstore.mik.ua/orelly/java-ent/jfc/ch04_03.htm
+;; https://docs.oracle.com/javase/7/docs/api/java/awt/geom/AffineTransform.html
+
 (defn make-panel []
   (let [panel (proxy [JPanel] []
                 (paintComponent [g]
@@ -21,7 +25,7 @@
                  (doseq [j (range lowerR upperR step)] (.drawLine g j upperR   upperR (- upperR j)))
                           (doto g       (.setColor Color/GREEN)) 
                  (doseq [j (range lowerR upperR step)] (.drawLine g  lowerR j  upperR (- upperR j)))
-                 (doseq [j (range lowerR upperR step)] (.drawLine g  lowerR j  upperR (- upperR j)))
+                 (doseq [j (range lowerR upperR step)] (.drawLine g  lowerR j  upperR (- lowerR j)))
      ))]
     (doto panel
       (.setPreferredSize (Dimension. (+ upperR 50) (+ upperR 50))))))   ;; 
