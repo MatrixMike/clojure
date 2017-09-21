@@ -4,4 +4,5 @@
 
 (deftest a-test
   (testing "FIXME, I fail."
+  (println "from test")
     (is (= 0 1))))
