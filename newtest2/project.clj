@@ -1,4 +1,4 @@
-(defproject newtest2 "0.1.0-SNAPSHOT"
+(defproject newtest2 "0.1.1-SNAPSHOT"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
@@ -6,4 +6,5 @@
   :dependencies [[org.clojure/clojure "1.8.0"]]
   
   :main newtest2.core
+  :aot :all
   )
