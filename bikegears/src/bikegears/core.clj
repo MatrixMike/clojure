@@ -7,6 +7,7 @@
 ;;  "I don't do a whole lot."
  ;; [x]
  ;; (println x "Hello, World!"))
+ 
 (def fgear (seq [22.0, 32.0, 42.0]))
 ;;(def rgear (seq [26 23 21 19 17 15 13 12])) 
 (def rgear (seq [26, 23, 21, 19, 17, 15, 13, 12]))
