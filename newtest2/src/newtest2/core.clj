@@ -9,6 +9,13 @@
 ;;(ns clojure.examples.hello
 ;;    (:gen-class))
 
+(defn fib [n]
+  (if (<= n 1)
+    n
+    (+ (fib (dec n)) (fib (- n 2)))))
+
 (defn -main
   [greetee]
-  (println (str "Hello " greetee "!")))
+  (println (str "Hello " greetee "!"))
+  (println (fib 5))       ;; try w/out () around fib 5 
+  )
