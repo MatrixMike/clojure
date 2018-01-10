@@ -1,0 +1,12 @@
+Wed 10 Jan 2018 23:53:41 AEDT 
+
+mikeh@d400 ~/clojure/stringeye $ lein uberjar
+OpenJDK Client VM warning: TieredCompilation is disabled in this release.
+Java compiler not found; Be sure to use java from a JDK
+rather than a JRE by modifying PATH or setting JAVA_CMD.
+
+
+This uses javac to compile a class before calling the clojure compiler.
+So needs a cleaner config : to run on fresh LMDE installation.
+
+
