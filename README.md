@@ -4,7 +4,8 @@ Sub projects that are of particular interest to me are:<ol>
 <li>pelicans
 </li><li>stringeye
 </li><li>bikegears
-</li>adventure
+</li><li>adventure
+</li>
 </ol>
 
 Mon Mar 21 09:48:22 AEDT 2016 
