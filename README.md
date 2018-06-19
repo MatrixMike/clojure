@@ -1,5 +1,12 @@
 #clojure
 
+Sub projects that are of particular interest to me are:<ol>
+<li>pelicans
+</li><li>stringeye
+</li><li>bikegears
+</li>adventure
+</ol>
+
 Mon Mar 21 09:48:22 AEDT 2016 
 I am in the process of learning Clojure - a LISP like language that runs on top of (is hosted by) the JVM (Java Virtual Machine). I came across LISP around 1979 at Newcastle University {NEWC} and subsequently used LISP on a BBC MicroComputer.
 
