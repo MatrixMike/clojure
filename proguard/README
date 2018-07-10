@@ -1,11 +1,13 @@
 # proguard
 
-FIXME: write description
+A Clojure library designed to work on using proguard.
 
 ## Usage
-
-FIXME: write
-
+<ol>
+<li>lein  uberjar
+</li><li>java -jar target/proguard-0.1.0-SNAPSHOT-standalone.jar 
+</li>
+</ol>
 ## License
 
 Copyright (C) 2016 FIXME

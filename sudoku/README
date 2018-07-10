@@ -8,10 +8,11 @@ To run this :
 git clone <repo URL>
 install lein -> sudo apt-get install lein    <- on Linux
 cd <repo name>
-lein uberjar
-java -jar < standalone version >
-
-
+<ol>
+<li>lein  uberjar
+</li><li>java -jar target/sudoku-1.0.4-SNAPSHOT-standalone.jar  4 6 8
+</li>
+</ol>
 
 ## Usage
 

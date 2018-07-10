@@ -8,6 +8,8 @@ Sub projects that are of particular interest to me are:<ol>
 </li>
 </ol>
 
+ Tue 10 Jul 2018 16:58:47 AEST : running on Dell D400 (PAE DIS)  499M RAM
+
 Mon Mar 21 09:48:22 AEDT 2016 
 I am in the process of learning Clojure - a LISP like language that runs on top of (is hosted by) the JVM (Java Virtual Machine). I came across LISP around 1979 at Newcastle University {NEWC} and subsequently used LISP on a BBC MicroComputer.
 
@@ -17,8 +19,6 @@ Mon Mar 21 09:57:06 AEDT 2016
 Some examples are trivial at a language level but are/were tricky to compile due to required knowledge of included libraries.
 
 This is a self directed project and has been tremendous fun. I first started to enjoy the interoperation of languages at NEWC with AlgolW and Fortran/Assembler on an IBM 360 mainframe.
-
-
 
 #===========================
 
