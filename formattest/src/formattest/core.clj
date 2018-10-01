@@ -45,7 +45,7 @@
 ;;https://stackoverflow.com/questions/13224733/mapcat-using-map-and-concat
 ;;(println  (map #(list % %) [1 2 3]))
 (println  (map #(list % %) [1 2 3]))
-(format "Hello there, %s" "bob")
+(println (format "Hello there, %s" "bob"))
 (foo  "mjh" )
 (println "\ntest 2")
 (flush)
