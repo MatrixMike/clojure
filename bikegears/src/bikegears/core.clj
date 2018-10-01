@@ -3,10 +3,10 @@
 (:require   [clojure.string :as cstr]
             [clojure.set    :as cset]))
 
-;;(defn foo
-;;  "I don't do a whole lot."
- ;; [x]
- ;; (println x "Hello, World!"))
+(defn foo
+  "I don't do a whole lot."
+ [x]
+ (println x "Hello, World!"))
 
 (def fgear (seq [22.0 32.0 42.0]))
 (def rgear (seq [26 23 21 19 17 15 13 12]))
@@ -22,6 +22,7 @@
 
  (print "%3.3f v" [(sort (for [f tam1fgear r tam1rgear ] (/ f r))  )]
  )
+ (foo "foo")
 (println "\nafter a bike\n")
 
 (defn -main [& args]
