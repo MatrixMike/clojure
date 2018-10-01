@@ -8,11 +8,20 @@
   (println x "Hello, World!"))
   
 
-(defn midp 
+ (defn midp 
 [n m ]
-
+"return half the sum of the given values"
 (* (+ n m ) 0.5)
-)
+)     
+ (defn makeLine [x1 y1 x2 y2 ]
+ "generate a list of n co-ords between two points "
+ "(x2-x1)/ (n+1)  is step    "
+ "  (doseq [n "
+ [(midp x1 x2)
+ (midp y1 y2)]
+ ;;(def Linex (seq []))
+ ;;(def Liney (seq []))
+ )
 
 
   
@@ -46,6 +55,8 @@
 ;;(println  (map #(list % %) [1 2 3]))
 (println  (map #(list % %) [1 2 3]))
 (println (format "Hello there, %s" "bob"))
+(println (makeLine 2.1 17.2 5.1 13.1 ))
+;;(println (format( " %3f %3f %3f %3f " (makeLine 2.1 17.2 5.1 13.1 ))))
 (foo  "mjh" )
 (println "\ntest 2")
 (flush)

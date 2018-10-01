@@ -9,7 +9,10 @@
 )         
 ; Date  13.05.2015 14:24:59
  ;; Fri 18 Mar 2016 01:17:34 AEDT 
-(def upperR 400) (def lowerR 0) (def step 5)
+ ;;01.10.2018 23:17:07
+(def upperR 400) 
+(def lowerR 0) 
+(def step 5)
 (comment (def mjhTest (. demo twice 200)))
 
 ;; Graphics: drawLine(int x1, int y1, int x2, int y2)
@@ -29,13 +32,20 @@
      ))]
     (doto panel
       (.setPreferredSize (Dimension. (+ upperR 50) (+ upperR 50))))))   ;; 
-      
- (defn makeLine [x1 y1 x2 y2 n]
+ 
+ (defn midp 
+[n m ]
+"return half the sum of the given values"
+(* (+ n m ) 0.5)
+)     
+ (defn makeLine [x1 y1 x2 y2 ]
  "generate a list of n co-ords between two points "
  "(x2-x1)/ (n+1)  is step    "
  "  (doseq [n "
- (def Linex (seq []))
- (def Liney (seq []))
+ [(midp x1 x2)
+ (midp y1 y2)]
+ ;;(def Linex (seq []))
+ ;;(def Liney (seq []))
  )
  
  
@@ -51,7 +61,8 @@
    .show))
  
 (defn -main [& args] 
-
+(println (makeLine 2 3 10 11 ))
 (make-frame (make-panel)) ;; (System/exit 0))   
+
 )
 
