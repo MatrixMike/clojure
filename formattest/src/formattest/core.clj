@@ -35,8 +35,9 @@
 (defn -main [& args]
 (println "\ntest 1")
 ;; why does (format ... ) not produce anything ?
-(format "%.3f" 2.0)
-(printf "midpoint is %2.3f%n" (midp 2 9))
+(println (format "%.3f" 2.0))
+;;(printf "midpoint of %f and %f is %2.3f%n"  2 9 (midp 2 9))
+(printf "midpoint of  and  is %2.3f%n"   (midp 2 9))
 (printf "%2.2f%n" 2.0)
 (printf "1 + 2 is %s%n" 3)
 ;;(hello (cstr/join ", " (map uppercase-first  (reverse (sort riders))))))
@@ -47,4 +48,5 @@
 (format "Hello there, %s" "bob")
 (foo  "mjh" )
 (println "\ntest 2")
+(flush)
 )
