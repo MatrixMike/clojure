@@ -58,6 +58,9 @@
 (println (makeLine 2.1 17.2 5.1 13.1 ))
 ;;(println (format( " %3f %3f %3f %3f " (makeLine 2.1 17.2 5.1 13.1 ))))
 (foo  "mjh" )
+;;
+(println (map #(list % %)  [ 1.1 2.1 3.1 4.1 ]))
+(println (map #(list % %)  (makeLine 2.1 17.2 5.1 13.1 )))
 (println "\ntest 2")
 (flush)
 )
