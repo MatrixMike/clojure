@@ -14,11 +14,12 @@
 (* x x))
 
 (defn ft [x]
-(format "Hello there, %3.2f" x))
+(format " %3.2f" (* x x)))  ;; (format " %3.2f" squ(x)))
 
 
 (println (map inc [1 2 3 4 5]))
 (println (map squ [1 2 3 4 5]))
 (println (map ft [1.1 2.1 3.1 4.1 5.1] ))
+(println (map ft (range 1.1 15.1  )))
 (print (ft 6.1))
 
