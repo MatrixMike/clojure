@@ -1,6 +1,8 @@
 (ns formattest.core
 (:gen-class )
-(:require   [clojure.string :as cstr]
+;;(:require clojure.pprint)
+(:require   [clojure.pprint :as pp]
+            [clojure.string :as cstr]
             [clojure.set    :as cset]))
 (defn foo
   "I don't do a whole lot."
@@ -35,7 +37,14 @@
 		word))
 		
 (def greeting "Hello")
-		
+
+;;(defn pp
+;;  ([n x]
+;;   (binding [pp/*print-right-margin* n]
+ ;;    (-> x clojure.pprint/pprint)))
+;;  ([x]
+ ;;  (pp 100 x)))		
+ 
 (defn hello 
 	"Returns hello string" 
 	[who]
@@ -62,5 +71,9 @@
 (println (map #(list % %)  [ 1.1 2.1 3.1 4.1 ]))
 (println (map #(list % %)  (makeLine 2.1 17.2 5.1 13.1 )))
 (println "\ntest 2")
+(dorun (map println [1 2 3 4 5]))
+(apply (partial map println) [[1 2 3 4]])
+(pp/print-table [{:a 1 :b 2 :c 3} {:b 5 :a 7 :c "dog"}])
+(apply (partial map println) ['(1 2 3 4)])
 (flush)
 )
