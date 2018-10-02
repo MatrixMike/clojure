@@ -40,11 +40,12 @@
 
 (for [f fgear r rgear ] (/ f r))  ;; creates unsorted output
 
- (doseq n     (sort (for [f fgear r rgear ] (/ f r))  ) ;;  now a sorted list 22/2/2016
- (println n)
- )
+;; (doseq n     (sort (for [f fgear r rgear ] (/ f r))  ) ;;  now a sorted list 22/2/2016
+;; (println n)
+;; )
  
  
-;
+;;
+  (println "nearly")
   (println (str   "\n" (sort (for [f fgear r rgear ] (/ f r)))))  ;; creates sorted output  ;; 27/2/2016
 ;; really want each item in list to be on separate line  
