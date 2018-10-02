@@ -1,3 +1,4 @@
+;; revived   02.10.2018 15:52:42
 (def objects '(whiskey-bottle bucket frog chain))
 
 ;; Helpers
