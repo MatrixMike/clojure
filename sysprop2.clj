@@ -29,8 +29,6 @@
 (def prope "user.name") 	;;User account name
 (def propf "java.vm.version") 	;;
 
-
-
 (System/getProperty prop1)
 (System/getProperty prop2)
 (System/getProperty prop3)
@@ -46,10 +44,7 @@
 (System/getProperty prope)
 (System/getProperty propf)
 
-
 (def propf "java.vm.version") 	;;
-
-
 
 (System/getProperty prop1)
 (System/getProperty prop2)
