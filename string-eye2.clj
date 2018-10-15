@@ -4,7 +4,7 @@
            [java.awt Dimension]
            [java.awt Color]
 ))
-;           
+; 15.10.2018 10:44:37          
 ; Date  13.05.2015 14:24:59
  
 (def upperR 400) (def lowerR 0) (def step 5)

@@ -21,6 +21,8 @@
 ;;(def 
 (println (map inc [1 2 3 4 5]))
 (println (map squ [1 2 3 4 5]))
+(println (apply map vector [[:a :b] [:c :d]]))
+(println (apply map vector [[:a :b] [:c :d] [:e :f]]))
 (println (map ft [1.1 2.1 3.1 4.1 5.1] ))
 (println (map ft (range 1.1 15.1  )))
 (println "line")
