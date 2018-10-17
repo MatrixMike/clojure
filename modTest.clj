@@ -15,9 +15,14 @@
 (println)
 (print (map unify months temps))
 (println)
-(def x 20)
-(print(condp = x
+(def x 2)
+(print(condp = x 1 :red 2 :green 3 :blue :dunno))
+    (print (map #(condp = %
   1 :red
   2 :green
   3 :blue
-  :dunno))
+    :dunno)     (range 1 10)))
+(println)
+;;(print (map #(condp = x 1 :red 2 :green 3 :blue :dunno)    (map #(mod % 4) (range 1 10))))
+
+  
