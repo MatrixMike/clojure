@@ -21,7 +21,7 @@
   1 :red
   2 :green
   3 :blue
-    :dunno)     (range 1 10)))
+    :dunno)     (map #(mod % 4) (range 1 10))))
 (println)
 ;;(print (map #(condp = x 1 :red 2 :green 3 :blue :dunno)    (map #(mod % 4) (range 1 10))))
 
