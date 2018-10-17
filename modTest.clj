@@ -14,3 +14,10 @@
    :temp temp})
 (println)
 (print (map unify months temps))
+(println)
+(def x 20)
+(print(condp = x
+  10 :ten
+  20 :twenty
+  30 :forty
+  :dunno))
