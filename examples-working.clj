@@ -18,7 +18,7 @@
 		(defn vec-norm [[x, y, z]]
   (Math/sqrt (+ (* x x) (* y y) (* z z))))
  
-user=> (vec-norm [1, 2, 3])
+;;user=> (vec-norm [1, 2, 3])
 
 (doseq [ item '((1 2) [3 4] "D")] (prn item))
 
@@ -26,8 +26,8 @@ user=> (vec-norm [1, 2, 3])
 
 (for [item {:a 1 :b 2}] item)
 
-((dotimes [i 4] (prn(str  "00" i)))  ;; errors here
-(dotimes [i 4] (prn(str  "00" i))))
+;;((dotimes [i 4] (prn(str  "00" i)))  ;; errors here
+;;(dotimes [i 4] (prn(str  "00" i))))
 
 (dotimes [i 4] (prn (* i 3)))
 
@@ -49,7 +49,7 @@ user=> (vec-norm [1, 2, 3])
  
  
  
-  @x
+;;  @x
   
   (def p #{1,2,3})
   
