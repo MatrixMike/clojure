@@ -13,8 +13,13 @@
   (let [panel (proxy [JPanel] []
                 (paintComponent [g]
                  (doto g       (.setColor Color/BLUE)) 
-                 (doseq [j (range lowerR upperR step)] (.drawLine g j 0        0      (- upperR j)))
+                 (doseq [j (range lowerR upperR step)] (.drawLine g j lowerR   lowerR (- upperR j)))
+                 (doto g       (.setColor Color/GREEN)) 
                  (doseq [j (range lowerR upperR step)] (.drawLine g j upperR   upperR (- upperR j)))
+                 (doto g       (.setColor Color/RED)) 
+                 (doseq [j (range lowerR upperR step)] (.drawLine g lowerR   j   j       upperR ))
+                 (doto g       (.setColor Color/BLACK)) 
+                 (doseq [j (range lowerR upperR step)] (.drawLine g j  lowerR   upperR j))
      ))]
     (doto panel
       (.setPreferredSize (Dimension. (+ upperR 50) (+ upperR 50))))))
