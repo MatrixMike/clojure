@@ -26,7 +26,7 @@
       (.setPreferredSize (Dimension. (+ upperR 50) (+ upperR 50))))))
  
 (defn make-frame [panel]
-  (doto (JFrame.)        ;;was (new JFrame)
+  (doto  (new JFrame "StringEye")        ;;was (new JFrame)
     (.add panel)
     .pack
     (.setDefaultCloseOperation JFrame/EXIT_ON_CLOSE)
