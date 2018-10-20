@@ -11,16 +11,19 @@
 
 (defn make-panel []
   (let [panel (proxy [JPanel] []
+
                 (paintComponent [g]
+                             (println)  (comment to flush the printf)
                  (doto g       (.setColor Color/BLUE)) 
                  (doseq [j (range lowerR upperR step)] (.drawLine g j lowerR   lowerR (- upperR j)))
-                 (doto g       (.setColor Color/GREEN)) 
-                 (doseq [j (range lowerR upperR step)] (.drawLine g j upperR   upperR (- upperR j)))
+
                  (doto g       (.setColor Color/RED)) 
-                 (doseq [j (range lowerR upperR step)] (.drawLine g lowerR   j   j       upperR ))
+                 (doseq [j (range lowerR ( inc upperR) step)] (.drawLine g lowerR   j   j       upperR ))
                  (doto g       (.setColor Color/BLACK)) 
                  (doseq [j (range lowerR ( inc upperR)  step)] (.drawLine g j  lowerR   upperR j))
            (doseq [j (range lowerR  ( inc upperR)   step)] (printf "(%3d, %3d) (%3d, %3d) %n" j lowerR upperR j ))   ;;print the values
+                 (doto g       (.setColor Color/GREEN)) 
+                 (doseq [j (range lowerR upperR step)] (.drawLine g j upperR   upperR (- upperR j)))
            (println)  (comment to flush the printf)
      ))]
     (doto panel
