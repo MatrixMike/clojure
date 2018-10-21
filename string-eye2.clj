@@ -11,8 +11,9 @@
 
 (defn make-panel []
   (let [panel (proxy [JPanel] []
-
+;; (comment JButton newLineButton = new JButton("New Line")  )
                 (paintComponent [g]
+;;                (new JButton "New Line") 
                              (println)  (comment to flush the printf)
                  (doto g       (.setColor Color/BLUE)) 
                  (doseq [j (range lowerR upperR step)] (.drawLine g j lowerR   lowerR (- upperR j)))
