@@ -35,6 +35,7 @@
     (.add panel)
     .pack
     (.setDefaultCloseOperation JFrame/EXIT_ON_CLOSE)
+    (.setDefaultCloseOperation JFrame/DISPOSE_ON_CLOSE)
     .show))
  
 (make-frame (make-panel)) ;; (System/exit 0))    
