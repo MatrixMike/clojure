@@ -16,27 +16,27 @@
 
 
  ;;(doseq  [n (range  3 010 2 )]    (sort (for [f fgear r rgear ] (/ f r))  ) ;;  now a sorted list 22/2/2016
- (print "%3.3f v" [(sort (for [f fgear r rgear ] (/ f r))  )]
+(comment (print "%3.3f v" [(sort (for [f fgear r rgear ] (/ f r))  )]
  )
-(println "\nafter a bike\n")
+(println "\nafter a bike\n") 
 
  (print "%3.3f v" [(sort (for [f tam1fgear r tam1rgear ] (/ f r))  )]
- )
- (foo "foo")
-(println "\nafter a bike\n")
+ ))
+ (comment (foo "foo")  )
+
 
 (defn -main [& args]
-(println "\ntest 1\n")
+;;(println "\ntest 1\n")
 
  
 (def fgear (seq [22.0, 32.0, 42.0]))
 ;;(def rgear (seq [26 23 21 19 17 15 13 12])) 
 (def rgear (seq [26, 23, 21, 19, 17, 15, 13, 12]))
  ;;(doseq  [n (range  3 010 2 )]    (sort (for [f fgear r rgear ] (/ f r))  ) ;;  now a sorted list 22/2/2016
- (println "%3.3f v" [(sort (for [f fgear r rgear ] (/ f r))  )])
- (printf "1 + 2 is %s%n" 3)
+(comment  (println "%3.3f v" [(sort (for [f fgear r rgear ] (/ f r))  )]))
+ (comment (printf "1 + 2 is %s%n" 3))
  
 ;;(defn -main [& args]
 ;;(printf "1 + 2 is %s%n" 3)
-
+(println (map #(printf "%n %2.3f " %) (sort (for [f fgear r rgear ] (/ f r)))))
 )

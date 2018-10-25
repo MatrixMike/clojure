@@ -49,4 +49,5 @@
   (println "nearly")
   (println (str   "\n" (sort (for [f fgear r rgear ] (/ f r)))))  ;; creates sorted output  ;; 27/2/2016
 ;; really want each item in list to be on separate line  
+(comment copied formatted print construct from non-lein version  )
 (println (map #(printf "%n %2.3f " %) (sort (for [f fgear r rgear ] (/ f r)))))

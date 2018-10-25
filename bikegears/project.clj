@@ -1,5 +1,5 @@
 
-(defproject bikegears "0.1.4-SNAPSHOT"
+(defproject bikegears "0.1.5-SNAPSHOT"
   :description "simple nested division"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
