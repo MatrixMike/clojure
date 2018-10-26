@@ -32,7 +32,7 @@
 
 
 (defn -main [& args]
-(println (hello-riders))
+(println (hello-riders)) 
 (println (cstr/lower-case "MiXeD cAsE"))
 (println (cstr/lower-case riders))
 )
