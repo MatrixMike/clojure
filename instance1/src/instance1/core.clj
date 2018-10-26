@@ -43,8 +43,9 @@
        " an IBar"))
 
 (defn -main [s]
-  (let [x (new clojure.examples.instance s)
+(comment   (let [x (new clojure.examples.instance s)
         y (new clojure.examples.impl)]
+        )
     (while (.hasNext x)
       (println (.next x)))
     (println (.foo y))
