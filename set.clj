@@ -142,7 +142,7 @@
   (and (>= (count set1) (count set2))
        (every? #(contains? set1 %) set2)))
 
-(comment
+
 (refer 'set)
 (def xs #{{:a 11 :b 1 :c 1 :d 4}
          {:a 2 :b 12 :c 2 :d 6}
@@ -160,3 +160,4 @@
 (intersection #{:a :b :c} #{:c :d :e})
 
 (index ys [:b])
+
