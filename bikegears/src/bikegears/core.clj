@@ -14,12 +14,15 @@
 (def tam1fgear (seq [38.0 28.0 48.0]))
 (def tam1rgear (seq [24 28 21 18 16 14 12]))
 
+(def peugeotfgear (seq [38.0 28.0 48.0]))
+(def peugeotrgear (seq [24 34 20 22 18 16 14]))
 
  ;;(doseq  [n (range  3 010 2 )]    (sort (for [f fgear r rgear ] (/ f r))  ) ;;  now a sorted list 22/2/2016
 (comment (print "%3.3f v" [(sort (for [f fgear r rgear ] (/ f r))  )]
  )
 (println "\nafter a bike\n") 
-
+ (print "%3.3f v" [(sort (for [f peugeotfgear r peugeotrgear ] (/ f r))  )]
+ )
  (print "%3.3f v" [(sort (for [f tam1fgear r tam1rgear ] (/ f r))  )]
  ))
  (comment (foo "foo")  )
@@ -38,5 +41,7 @@
  
 ;;(defn -main [& args]
 ;;(printf "1 + 2 is %s%n" 3)
-(println (map #(printf "%n %2.3f " %) (sort (for [f fgear r rgear ] (/ f r)))))
+(println (map #(printf "%n %2.3f " %) (sort (for [f peugeotfgear r peugeotrgear  ] (/ f r)))))
+(println "peugeot \n")
+(println "peugeot \n")
 )
