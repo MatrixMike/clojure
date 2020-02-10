@@ -6,6 +6,6 @@
   :dependencies [[org.clojure/clojure "1.10.0"]]
   
   :main pelicans.core
-  :aot :all
+  :uberjar {:aot :all}
   :omit-source true
   )
