@@ -1,2 +1,4 @@
 language = "bash"
-run = ""
+run = "echo hello world"
+
+
