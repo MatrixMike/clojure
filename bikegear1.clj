@@ -1,6 +1,6 @@
 ;; clojure program to generate all possible values of gear
 ;; ratios for Mike's white bike  (ex PB)
-
+;; 21 May 2020
 
 (def digits (seq [1 2 3]))
 (for [x1 digits x2 digits] (* x1 x2))
